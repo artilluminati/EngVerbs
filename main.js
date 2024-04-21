@@ -8,7 +8,7 @@ var verbs = {
     "дуть": ["blow", "blew", "blown"],
     "строить": ["build", "built", "built"],
     "рождаться": ["born", "bornt", "bornt"],
-    "прийти": ["come", "come", "come"],
+    "прийти": ["come", "came", "come"],
     "выбирать": ["choose", "chose", "chosen"],
     "резать": ["cut", "cut", "cut"],
     "кусать": ["bite", "bit", "bitten"],
