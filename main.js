@@ -1,8 +1,26 @@
 // Объект с глаголами и их формами
 var verbs = {
     // Пример структуры данных
-    "идти": ["go", "went", "gone"],
-    "идти2": ["go", "went", "gone"],
+    "начать": ["begin", "began", "begun"],
+    "ломать": ["break", "broke", "broken"],
+    "приносить": ["bring", "brought", "brought"],
+    "стать": ["become", "became", "become"],
+    "дуть": ["blow", "blew", "blown"],
+    "строить": ["build", "built", "built"],
+    "рождаться": ["born", "bornt", "bornt"],
+    "прийти": ["come", "come", "come"],
+    "выбирать": ["choose", "chose", "chosen"],
+    "резать": ["cut", "cut", "cut"],
+    "кусать": ["bite", "bit", "bitten"],
+    "покупать": ["buy", "bought", "bought"],
+    "ловить": ["catch", "caught", "caught"],
+    "стоить": ["сost", "cost", "cost"],
+    "делать": ["do", "did", "done"],
+    "рисовать": ["draw", "drew", "drawn"],
+    "мечтать": ["dream", "dreamed", "dreamt"],
+    "пить": ["drink", "drank", "drunk"],
+    "водить": ["drive", "drove", "driven"],
+    "есть": ["eat", "ate", "eaten"],
     // Добавьте больше глаголов по аналогии
 };
 
@@ -15,8 +33,40 @@ var userAnswers = [];
 // Получить массив глаголов
 var verbKeys = Object.keys(verbs);
 
+// Функция для перемешивания массива (алгоритм Фишера-Йетса)
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // Пока остаются элементы для перемешивания...
+    while (0 !== currentIndex) {
+
+        // Выбираем оставшийся элемент...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // И меняем его местами с текущим элементом.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
+// Перемешиваем массив глаголов перед началом игры
+verbKeys = shuffle(verbKeys);
+
 // Обработчик события нажатия на кнопку "Начать"
 document.getElementById('start').addEventListener('click', function() {
+    // Получить количество глаголов из поля ввода
+    var numVerbs = document.getElementById('numVerbs').value;
+
+    // Убедиться, что количество глаголов не превышает общее количество глаголов
+    numVerbs = Math.min(numVerbs, verbKeys.length);
+
+    // Перемешать массив глаголов и взять первые numVerbs глаголов
+    verbKeys = shuffle(verbKeys).slice(0, numVerbs);
+
     // Показать второй экран
     document.getElementById('screen1').style.display = 'none';
     document.getElementById('screen2').style.display = 'flex';
@@ -24,6 +74,12 @@ document.getElementById('start').addEventListener('click', function() {
     // Заполнить глагол на русском языке
     document.getElementById('russianVerb').innerText = verbKeys[currentVerbIndex];
 });
+
+// При загрузке страницы отобразить общее количество глаголов
+window.onload = function() {
+    document.getElementById('totalVerbs').innerText = 'из ' + verbKeys.length;
+};
+
 
 // Обработчик события нажатия на кнопку "Показать 1 форму"
 document.getElementById('showFirstForm').addEventListener('click', function() {
