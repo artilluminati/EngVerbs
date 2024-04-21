@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>глаголы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Корневой элемент -->
+    <div id="root">
+        <!-- Первый экран -->
+        <div id="screen1">
+            <button id="start">Начать</button>
+        </div>
+
+        <!-- Второй экран -->
+        <div id="screen2" style="display: none;">
+            <p id="russianVerb"></p>
+            <button id="showFirstForm">Показать 1 форму</button>
+            <input type="text" id="secondForm" placeholder="Введите 2 форму глагола">
+            <input type="text" id="thirdForm" placeholder="Введите 3 форму глагола">
+            <button id="next">Далее</button>
+        </div>
+
+        <!-- Третий экран -->
+        <div id="screen3" style="display: none;">
+            <p id="correctAnswers"></p>
+            <button id="nextVerb">Показать следующий глагол</button>
+        </div>
+
+        <!-- Четвертый экран -->
+        <div id="screen4" style="display: none;">
+            <p id="finalScore"></p>
+            <table id="verbTable">
+                <tr>
+                    <th>Глагол</th>
+                    <th>1 форма</th>
+                    <th>2 форма</th>
+                    <th>3 форма</th>
+                </tr>
+                <!-- Заполняется динамически -->
+            </table>
+            <button id="restart">Запустить заново</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
