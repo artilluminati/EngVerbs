@@ -22,17 +22,17 @@ var verbs = {
     "водить": ["drive", "drove", "driven"],
     "есть": ["eat", "ate", "eaten"],
     */
-    "падать": "fall", "fell", "fallen",
-    "чувствовать": "feel", "felt", "felt",
-    "кормить": "feed", "fed", "fed",
-    "бороться": "fight", "fought", "fought",
-    "находить": "find", "found", "found",
-    "подходить": "fit", "fit", "fit",
-    "летать": "fly", "flew", "flown",
-    "запрещать": "forbid", "forbade", "forbidden",
-    "забыть": "forget", "forgot", "forgotten",
-    "прощать": "forgive", "forgave", "forgiven",
-    "замерзать": "freeze", "froze", "frozen"
+    "падать": ["fall", "fell", "fallen"],
+"чувствовать": ["feel", "felt", "felt"],
+"кормить": ["feed", "fed", "fed"],
+"бороться": ["fight", "fought", "fought"],
+"находить": ["find", "found", "found"],
+"подходить": ["fit", "fit", "fit"],
+"летать": ["fly", "flew", "flown"],
+"запрещать": ["forbid", "forbade", "forbidden"],
+"забыть": ["forget", "forgot", "forgotten"],
+"прощать": ["forgive", "forgave", "forgiven"],
+"замерзать": ["freeze", "froze", "frozen"]
     // Добавьте больше глаголов по аналогии
 };
 
