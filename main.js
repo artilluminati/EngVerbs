@@ -1,7 +1,7 @@
 // Объект с глаголами и их формами
 var verbs = {
     // Пример структуры данных
-    "начать": ["begin", "began", "begun"],
+    /*"начать": ["begin", "began", "begun"],
     "ломать": ["break", "broke", "broken"],
     "приносить": ["bring", "brought", "brought"],
     "стать": ["become", "became", "become"],
@@ -21,6 +21,18 @@ var verbs = {
     "пить": ["drink", "drank", "drunk"],
     "водить": ["drive", "drove", "driven"],
     "есть": ["eat", "ate", "eaten"],
+    */
+    "падать": "fall", "fell", "fallen",
+    "чувствовать": "feel", "felt", "felt",
+    "кормить": "feed", "fed", "fed",
+    "бороться": "fight", "fought", "fought",
+    "находить": "find", "found", "found",
+    "подходить": "fit", "fit", "fit",
+    "летать": "fly", "flew", "flown",
+    "запрещать": "forbid", "forbade", "forbidden",
+    "забыть": "forget", "forgot", "forgotten",
+    "прощать": "forgive", "forgave", "forgiven",
+    "замерзать": "freeze", "froze", "frozen"
     // Добавьте больше глаголов по аналогии
 };
 
