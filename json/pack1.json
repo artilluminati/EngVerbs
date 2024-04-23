@@ -1,0 +1,102 @@
+{
+    "начать": [
+        "begin",
+        "began",
+        "begun"
+    ],
+    "ломать": [
+        "break",
+        "broke",
+        "broken"
+    ],
+    "приносить": [
+        "bring",
+        "brought",
+        "brought"
+    ],
+    "стать": [
+        "become",
+        "became",
+        "become"
+    ],
+    "дуть": [
+        "blow",
+        "blew",
+        "blown"
+    ],
+    "строить": [
+        "build",
+        "built",
+        "built"
+    ],
+    "рождаться": [
+        "born",
+        "bornt",
+        "bornt"
+    ],
+    "прийти": [
+        "come",
+        "came",
+        "come"
+    ],
+    "выбирать": [
+        "choose",
+        "chose",
+        "chosen"
+    ],
+    "резать": [
+        "cut",
+        "cut",
+        "cut"
+    ],
+    "кусать": [
+        "bite",
+        "bit",
+        "bitten"
+    ],
+    "покупать": [
+        "buy",
+        "bought",
+        "bought"
+    ],
+    "ловить": [
+        "catch",
+        "caught",
+        "caught"
+    ],
+    "стоить": [
+        "сost",
+        "cost",
+        "cost"
+    ],
+    "делать": [
+        "do",
+        "did",
+        "done"
+    ],
+    "рисовать": [
+        "draw",
+        "drew",
+        "drawn"
+    ],
+    "мечтать": [
+        "dream",
+        "dreamed",
+        "dreamt"
+    ],
+    "пить": [
+        "drink",
+        "drank",
+        "drunk"
+    ],
+    "водить": [
+        "drive",
+        "drove",
+        "driven"
+    ],
+    "есть": [
+        "eat",
+        "ate",
+        "eaten"
+    ]
+}
